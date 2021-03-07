@@ -1,0 +1,74 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhmtl11/DTD/xhtml11.dtd">
+<!-- XML/XHTML boilerplate code -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+        <title>University Entrance</title>
+
+  <style>
+  	p,h1,h2,h3,h4,ul,ol,dl,caption{
+		color:#f9f9f9;
+
+	} 
+	.center {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	 
+	}
+	.button {
+		background-color: #4CAF50; 
+		border: none;
+		color: white;
+		padding: 5px 15px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+	}
+	.button1 {
+		background-color: white; 
+		color: black; 
+		border: 2px solid #008CBA;
+		}
+	.button1:hover {	
+		background-color: #008CBA;
+		color: white;
+		}
+  
+  </style>
+  </head>
+
+<nav>
+	<a style="position:absolute; top:5px; left:0px" class="button button1" onclick="document.location='index.html'">Home</a>
+	<button style="position:absolute; top:5px; left:110px" class="button button1" onclick="document.location='timetable.html'">My courses</button>
+	<button style="position:absolute; top:5px; left:260px" class="button button1"  onclick="document.location='favourite.html'">Favourite things</button>
+	<button style="position:absolute; top:5px; left:440px" class="button button1"  onclick="document.location='map.html'">Clickable maps</button>
+	<button style="position:absolute; top:5px; left:620px" class="button button1"  onclick="document.location='feedback.html'">Feed back form</button>
+	<button style="position:absolute; top:5px; left:800px" class="button button1"  onclick="document.location='citation.html'">Citation Page</button>
+</nav>
+  <body style="background-color:#E8A87C">  
+
+      <!-- most of content follows the body tag -->
+
+      <h1 style="text-align:center"><br />Campus Image map</h1>
+	  	<a href="#" onclick="history.go(-1)"class = "button button1">Go Back</a><!-- back button-->
+	  <p> we have three clickable maps</p>
+	  <ul><!-- list of clickable maps-->
+		<li>Odette school of business</li>
+		<li>Erie hall</li>
+		<li>the Welcome center(front of campus)</li>
+		</ul>
+		<p>Clicking on Erie Hall buidling will send you to the classroom database which has a description of all the rooms and there capacities</p><!-- description of what each link does-->
+		<p>Clicking on the Odette building will send you to the University of windsor School of business website"</p>
+		<p>Clicking on the seating area will give you a map of that location in which the picture was taken</p>
+	  <p><img src="campus.JPG" alt="uwindsor campus" usemap="#campus" height ="750" width="1000" class="center" ></p><!-- uploaded image to website using img src -->
+	  <p style="text-align:center">Image Source:<a href="https://windsorstar.com/news/local-news/u-of-windsor-campus-ranked-among-the-most-beautiful">https://windsorstar.com/news/local-news/u-of-windsor-campus-ranked-among-the-most-beautiful</a></p>
+		<map name="campus"><!-- map created for image-->
+		 <area shape="rect" coords="0,20,550,425" alt="Computer" href="https://ctl2.uwindsor.ca/classrooms/ER/"><!-- created rectangles surronding each building-->
+		  <area shape="rect" coords="700,100,970,400" alt="Computer" href="https://www.uwindsor.ca/business/">
+		  <area shape="rect" coords="50,500,1000,730" alt="Computer" href="http://web2.uwindsor.ca/pac/campusmap/BU_welcome.php">
+		 </map>
+
+        <p><a href="#top">Back to the top</a></p><!-- hyperlink to send user back to the top of the site-->
+</body><!-- these must be the last two lines of an HTML document --></html>

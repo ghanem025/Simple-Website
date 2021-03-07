@@ -1,0 +1,240 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhmtl11/DTD/xhtml11.dtd">
+<!-- XML/XHTML boilerplate code -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+        <title>Schedule/TimeTable</title>
+		<!-- using CSS to simplfy the changing of all text to gray ,changing the borders to gray also-->
+  </head>
+	<style type="text/css">  
+		p,h1,h2,h3,h4,ul,ol,dl,caption{
+			color:#f9f9f9;
+
+
+		} 
+		table, th, td {
+			border: 3px solid black;
+			border-collapse: collapse;
+			color:#323232
+		} 
+		#t01 tr:nth-child(even) {
+			background-color: #fff;
+		}
+		#t01 tr:nth-child(odd) {
+			background-color: #fff;
+		}
+		#t01 th {
+			color: white;
+			background-color: blue;
+		}
+		.button {
+			background-color: #4CAF50; 
+			border: none;
+			color: white;
+			padding: 5px 15px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			}
+		.button1 {
+			background-color: white; 
+			color: black; 
+			border: 2px solid #008CBA;
+			}
+		.button1:hover {	
+			background-color: #008CBA;
+			color: white;
+			}
+	</style>
+<nav>
+	<a style="position:absolute; top:5px; left:0px" class="button button1" onclick="document.location='index.html'">Home</a><!-- all pages have the same buttons-->
+	<button style="position:absolute; top:5px; left:110px" class="button button1" onclick="document.location='timetable.html'">My courses</button>
+	<button style="position:absolute; top:5px; left:260px" class="button button1"  onclick="document.location='favourite.html'">Favourite things</button>
+	<button style="position:absolute; top:5px; left:440px" class="button button1"  onclick="document.location='map.html'">Clickable maps</button>
+	<button style="position:absolute; top:5px; left:620px" class="button button1"  onclick="document.location='feedback.html'">Feed back form</button>
+	<button style="position:absolute; top:5px; left:800px" class="button button1"  onclick="document.location='citation.html'">Citation Page</button>
+</nav>
+  <body style="background-color:#E8A87C"> <!-- change background color using hexadecimal--> 
+
+      <!-- most of content follows the body tag -->
+
+      <h1 style="text-align:center"><br />Schedule/TimeTable</h1>
+	  	  	<a href="#" onclick="history.go(-1)"class = "button button1">Go Back</a><!-- button to go to previous page-->
+	  
+	  
+	  <h2>My Courses Fall(2019)</h2>
+	  <p> Course Codes</p>
+	  <ul><!-- list of all course from fall 2019-->
+		<li>COMP-1000: Key Concepts In Computer Science</li>
+		<li>COMP-1400: Intro: Algorithms & programming</li>
+		<li>MATH-1760:Functions and differential calculus</li>
+		<li>MATH-1260: Vectors and Linear Algebra</li>
+		<li>STEN-1000: Introductions to Business</li>
+	  </ul>
+	  <h3>
+	  <table id="t01" style="text-align:center"><!-- made a tabel to represent my schdule of all course in fall 2019-->
+	  <caption style= "text-align:center"> My TimeTable (FALL 2019)</caption>
+		<tr>
+			<th>Time</th>
+			<th>Monday</th>
+			<th>Tuesday</th>
+			<th>Wednesday</th>
+			<th>Thursday</th>
+			<th>Friday</th>
+		</tr>
+		<tr>
+			<td>10:00AM</td>
+			<td rowspan="4">COMP-1400 Lab</td>
+			<td rowspan ="9"></td>
+			<td rowspan="6"></td>
+			<td rowspan="9"></td>
+			<td rowspan="9"></td>
+		</tr>
+		
+		<tr>
+			<td>10:30AM</td>
+		</tr>
+		
+		<tr>
+			<td>11:00AM</td>
+		</tr>
+		
+		<tr>
+			<td>11:30AM</td>
+		</tr>
+		
+		<tr>
+			<td>12:00PM</td>
+			<td rowspan="2">Free</td>
+		
+		</tr>
+		
+		<tr>
+			<td>12:30PM</td>
+		</tr>
+		
+		<tr>
+			<td>1:00PM</td>
+			<td rowspan="3">COMP-1400 Lec</td>
+			<td rowspan="3">COMP-1400 Lec</td>
+		</tr>
+		
+		<tr>
+			<td>1:30PM</td>
+		</tr>
+		
+		<tr>
+			<td>2:20PM</td>
+		</tr>
+		
+		<tr>
+			<td>2:30PM</td>
+			<td rowspan="3">MATH-1760 Lec</td>
+			<td rowspan="3">COMP-1000 Lec</td>
+			<td rowspan="3">MATH-1760 Lec</td>
+			<td rowspan="3">COMP-1000 Lec</td>
+			<td rowspan="2">MATH-1760 Lec</td>
+		</tr>
+		
+		<tr>
+			<td>3:00PM</td>
+		</tr>
+		
+		<tr>
+			<td>3:50PM</td>
+			<td >End of Day</td>
+		</tr>
+		
+		<tr>
+			<td>4:00PM</td>
+			<td rowspan="5">MATH-1260 Lec</td>
+			<td rowspan="3">STEN-1000 Lec</td>
+			<td rowspan="5">MATH-1260 Lec</td>
+			<td rowspan="3">STEN-1000 Lec</td>
+			<td rowspan="11"></td>
+		</tr>
+		
+		<tr>
+			<td>4:30PM</td>
+		</tr>
+		
+		<tr>
+			<td>5:20PM</td>
+		</tr>
+		
+		<tr>
+			<td>5:30PM</td>
+			<td rowspan="4">COMP-1000 Lab</td>
+			<td rowspan="4">MATH-1760 Lab</td>
+		</tr>
+		
+		<tr>
+			<td>5:50PM</td>	
+		</tr>
+		
+		<tr>
+			<td>6:30PM</td>
+			<td rowspan="1">End of day</td>
+			<td rowspan="4">MATH-1260 Lab</td>
+		</tr>
+		
+		<tr>
+			<td>6:50PM</td>
+			<td rowspan="4"></td>
+		</tr>
+		
+		<tr>
+			<td>7:30PM</td>
+			<td>End of day</td>
+			<td>End of day</td>
+		</tr>
+		
+		<tr>
+			<td>7:50PM</td>
+			<td rowspan="2"></td>
+			<td rowspan="3"></td>
+		</tr>
+		
+		<tr>
+			<td>8:00PM</td>
+			<td>End of Day</td>
+		</tr>
+		
+		</h3>
+	  </table>
+	  <h3> Exam Time/Date<h4>
+	  <ul style="color:#9E1E9E"><!-- another list for exam dates-->
+		<li>COMP-1000 Final Exam Date: Dec 10th Tuesday 10:00AM - 1:00PM</li>
+		<li>COMP-1400 Final Exam Date: Dec 9th Monday 2:00PM - 5:00PM</li>
+		<li>MATH-1760 Final Exam Date: Dec 12th Thursday 10:00AM - 1:00PM</li>
+		<li>MATH-1260 Final Exam Date: Dec 11th Wednesday 8:00AM - 11:00AM</li>
+		<li>STEN-1000 Final Exam Date: Dec 14th Saturday: 5:00PM - 8:00PM</li>
+	  
+	  </ul>
+	  
+	  <h4>COMP-1000</h4><!-- gave a little descprition of each course and attached a picture representing the course-->
+	  <p>COMP-1000 gave an introdcution to logic in computer science.there was no programming in the class, it was pure logic using different rules and methods to prove certain statements.</p>
+	<p><img src="logic.PNG" alt="logic gates" height ="419" width="400" /></p><!-- uploaded image to website using img src -->
+	<p>image source:<a href="https://en.wikipedia.org/wiki/Logic_in_computer_science">https://en.wikipedia.org/wiki/Logic_in_computer_science</a></p><!-- source of image under all pictures-->
+	  <h4>COMP-1400</h4>
+	  <p>beginner computer science course that teaches you the basics of the C language.introcudtion to pointers,arrays,and C syntax.</p>
+	  <p><img src="comp1400.JPG" alt="C logo" height ="341" width="512" /></p><!-- uploaded image to website using img src -->
+	  <p>image source:<a href="http://motivecomputers.in/index.php/2018/06/22/c/">http://motivecomputers.in/index.php/2018/06/22/c/</a></p>
+	  <h4>MATH-1760</h4>
+	  <p>MATH-1760 is an introductory course to Calculus and differential equations.</p>
+	  <p><img src="calc.PNG" alt="graph" height ="217" width="233" /></p><!-- uploaded image to website using img src -->
+	  <p>image source:<a href="https://www.math24.net/differential-function/">https://www.math24.net/differential-function/</a></p>
+	  <h4>MATH-1260</h4>
+	  <p>MATH-1260 introduces students to vectros and matrices</p>
+	  <p><img src="matrix.PNG" alt="matrices" height ="273" width="620" /></p><!-- uploaded image to website using img src -->
+	  <p>image source:<a href="http://www.inquirymaths.com/home/algebra-prompts/matrices-inquiry">http://www.inquirymaths.com/home/algebra-prompts/matrices-inquiry</a></p>
+	  <h4>STEN-1000</h4>
+	  <p>STEN-1000 is an introduction to business.the course goes over all the different paths of working in a business , marketing ,Accounting ,financial advisor,and entrepreneur.<br />The Main 
+	  purpose of this course was to get you prepared for year 2 of business, in which you start to specialize in certain fields like accounting or marketing</p>
+	  <p><img src="intro.JPG" alt="business" height ="309" width="400" /></p><!-- uploaded image to website using img src -->
+	  <p>image source:<a href="https://www.openlearning.com/courses/introduction-to-business/">https://www.openlearning.com/courses/introduction-to-business/</a></p>
+	  
+	  <p><a href="#top">Back to the top</a></p><!-- hyperlink to send user back to the top of the site-->
+        
+</body><!-- these must be the last two lines of an HTML document --></html>
