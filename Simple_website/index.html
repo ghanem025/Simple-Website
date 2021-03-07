@@ -1,0 +1,89 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhmtl11/DTD/xhtml11.dtd">
+<!-- XML/XHTML boilerplate code -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+        <title>About me</title>
+		<!-- using CSS to simplfy the changing of all text to white ,changing the borders to black also-->
+  </head>
+	<style type="text/css">  
+		p,h1,h2,h3,h4,ul,ol,dl,caption{
+			color:#f9f9f9;
+
+
+		} 
+		table, th, td {
+			border: 3px solid black;
+			border-collapse: collapse;
+			color:#323232
+		} 
+		#t01 tr:nth-child(even) {
+			background-color: #fff;
+		}
+		#t01 tr:nth-child(odd) {
+			background-color: #fff;
+		}
+		#t01 th {
+			color: white;
+			background-color: blue;
+		}
+		.button {<!--changing the property of the buttons, such as color and size-->
+			background-color: #4CAF50; 
+			border: none;
+			color: white;
+			padding: 5px 15px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			}
+		.button1 {
+			background-color: white; 
+			color: black; 
+			border: 2px solid #008CBA;
+			}
+		.button1:hover {	
+			background-color: #008CBA;
+			color: white;
+			}
+	</style>
+	<!-- using two buttons to make a sort of hover effect-->
+<nav>
+	<a style="position:absolute; top:5px; left:0px" class="button button1" onclick="document.location='index.html'">Home</a><!-- making buttons to go to other pages,using the 'a' tag-->
+	<button style="position:absolute; top:5px; left:110px" class="button button1" onclick="document.location='timetable.html'">My courses</button>
+	<button style="position:absolute; top:5px; left:260px" class="button button1"  onclick="document.location='favourite.html'">Favourite things</button>
+	<button style="position:absolute; top:5px; left:440px" class="button button1"  onclick="document.location='map.html'">Clickable maps</button>
+	<button style="position:absolute; top:5px; left:620px" class="button button1"  onclick="document.location='feedback.html'">Feed back form</button>
+	<button style="position:absolute; top:5px; left:800px" class="button button1"  onclick="document.location='citation.html'">Citation Page</button>
+</nav>
+
+<body style="background-color:#E8A87C"> <!-- changed background color -->
+      <!-- three paragraphs about myself -->
+      <h1 style="text-align:center;"><br />About Me</h1><!-- align the text to the center-->
+	  <a href="#" onclick="history.go(-1)"class = "button button1">Go Back</a>
+      <p style="text-align:left">Hi, My name is Ghanem Ghanem and I am a student at the University of Windsor.I am currently in the CS 
+		Software Engineering specialization program. I started My first year fall 2019, it was a new experience for me , with a much bigger class 
+		than I thought possible.Thanks to my previous Highschool(Massey) the first year was easy, with many of the subjects I already learnt in 
+		highschool. However there was a big learning curve , it was up to myself to make sure that I keep track of all my classes.Unlike highschool were 
+		teacher constatnly remind you of what is due and what you need to do, University you must take it on yourself to make sure that you undestand what
+		is going on in the class, otherwise you risk falling behind.Making new friends was also a great experience at the University,many different people 
+		from all around the world coming together to learn and improve themselves creates a pleasing environment</p>
+	  	<p style="text-align:center">one of the things I like about the University of windsor is the staff.The Office staff were decent but what really surprised me was 
+		the professors. In highschool we were told that professors were heartless teaching machines who will leave you behind as soon as you make a mistake.But so far
+		most of my professors showed more care than even my highschool teachers.They would make specific dates just to discuss different subjects or to recieve feedback
+		from students.This was very different than what my old teachers used to do.Many of them didn't really care about our complaints and would usally just ignore them.
+		But here professors seem to really care about feedback and always try helping students when they can.Overall I've been satisfied with the teaching experience 
+		at the University of windsor.
+	  <p style="text-align:right">Enough about school lets talk about some sports. I have played over the years.Basketball is my favourite sport since
+		childhood.I started getting into basketball around 6th grade and never stopped playing.It was a fast pace experince, something I wasn't used to
+		since all my family loved soccer.Never really enjoyed soccer ,it was too slow most of the time you are waiting around for something to happen.Basektball
+		on the other hand has you moving every minute , no breaks.as soon as someone shoots the ball everyone is already on the other side of the court.This
+		the intensity i loved about basket ball.I also love volleyball,although I haven't played that much of it ,it was really fun playing with friends
+		especially when it got really competitve.Volleyball you need to be aware at all times, once you send the ball to the other side it's sure to come back 
+		in less than 10 seconds and by that time you need to be ready to hit it back.It had similar intesity to Basketball which was really appleaing to me.</p>
+
+
+
+	<p><a href="#top">Back to the top</a></p><!-- hyperlink to send user back to the top of the site-->
+</body><!-- these must be the last two lines of an HTML document -->
+</html>
